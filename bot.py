@@ -174,7 +174,9 @@ async def rate(ctx, lang):
 	for result in results[1:]:
 		stat_name = result[0]
 		msg += f'\n{stat_name}: {sub_grades[stat_name]:.2f} (weighted {sub_grades_weighted[stat_name]:.2f})'
-	msg += f'\n\n**{lang.sub_score}**: {"{:.2%}".format(sub_score)} (**weighted {"{:.2%}".format(sub_score_weighted)}**)'
+
+	msg += f'\n\n*Comparing against max of {4 + int(level / 4)} possible rolls at artifact level {level}.*'
+	msg += f'\n**{lang.sub_score}**: {"{:.2%}".format(sub_score)} (**weighted {"{:.2%}".format(sub_score_weighted)}**)'
 
 	embed = discord.Embed(color=color)
 	embed.set_author(name=ctx.message.author.display_name, icon_url=ctx.message.author.avatar_url)

@@ -176,6 +176,7 @@ def rate(level, results, options={}, lang=tr.en):
 	sub_grades_weighted = {}
 	max_roll_sum = 0
 	weighted_max_roll_sum = 0
+	max_possible_rolls = 4 + int(level / 4)
 	for result in results[1:]:
 		stat, value = result
 		equiv_max_rolls = value / max_subs[stat]
@@ -186,8 +187,8 @@ def rate(level, results, options={}, lang=tr.en):
 		sub_grades_weighted[stat] = weighted_max_rolls
 		print(f'stat: {stat}, equivalentMaxRolls: {equiv_max_rolls}')
 
-	sub_score = max_roll_sum / 9
-	sub_score_weighted = weighted_max_roll_sum / 9
+	sub_score = max_roll_sum / max_possible_rolls
+	sub_score_weighted = weighted_max_roll_sum / max_possible_rolls
 	print(f'useful max rolls out of 9: {weighted_max_roll_sum}')
 	print(f'score: {"{:.2%}".format(sub_score)}')
 	print(f'weighted score: {"{:.2%}".format(sub_score_weighted)}')
@@ -196,7 +197,7 @@ def rate(level, results, options={}, lang=tr.en):
 if __name__ == '__main__':
 	if sys.version_info[0] == 3 and sys.version_info[1] >= 8 and sys.platform.startswith('win'):
 		asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-	url = 'https://cdn.discordapp.com/attachments/789322210317041694/789341827353673758/20201218_041138.jpg'
+	url = 'https://cdn.discordapp.com/attachments/789322210317041694/789586319521218640/artifact2.PNG'
 	lang = tr.en
 	suc, text = asyncio.run(ocr(url, 1, lang))
 
