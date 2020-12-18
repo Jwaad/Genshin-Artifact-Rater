@@ -26,4 +26,4 @@ Set custom weights (valued between 0 and 1)
 ```
 -rate atk=1 er=0 atk%=0.5
 ```
-\`<stat>` is any of hp, hp%, atk, atk%, er, em, cr, cd, def, def%
+\<stat> is any of hp, hp%, atk, atk%, er, em, cr, cd, def, def%
