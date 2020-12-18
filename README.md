@@ -1,4 +1,6 @@
-# Oreo
+# OreoPanc4ke's Artifact Sub Rater
+https://twitch.tv/oreopanc4kes
+
 This is a quick and jank modified version of the original [Genshin Artifact Rater](https://github.com/shrubin/Genshin-Artifact-Rater) for personal use. Original README [here](https://github.com/shrubin/Genshin-Artifact-Rater/blob/master/README.md).
 
 Changed it to only rate substat rolls on how well they rolled compared to the max possible roll. Main stats are excluded - just use a piece with the right main stat 4Head what's the point of rating it if it's the wrong one?
