@@ -159,9 +159,9 @@ async def rate(ctx, lang):
 				app.restart()
 			return
 
-	if sub_score_weighted <= 50:
+	if sub_score_weighted <= 0.50:
 		color = discord.Color.blue()
-	elif sub_score_weighted > 50 and sub_score <= 75:
+	elif sub_score_weighted > 0.50 and sub_score <= 0.75:
 		color = discord.Color.purple()
 	else:
 		color = discord.Color.orange()
