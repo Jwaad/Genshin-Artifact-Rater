@@ -5,7 +5,7 @@ This is a quick and jank modified version of the original [Genshin Artifact Rate
 
 Changed it to only rate substat rolls on how well they rolled compared to the max possible roll. Main stats are excluded - just use a piece with the right main stat 4Head what's the point of rating it if it's the wrong one?
 
-Substat rolls are rated against a max of 9 perfect rolls (4 initial, 5 upgrades). Pieces are expected to be +20. Provides both unweighted and weighted numbers, as well as uses a less opinionated default weighting that values ER% and EM at full, since both are very valuable if you need them (sometimes better than ATK/CR/CDMG).
+Substat rolls are rated against the max number of perfect rolls for the level it's at (4 starting +1 per 4 levels for a max of 9 at +20). Provides both unweighted and weighted numbers, as well as uses a less opinionated default weighting that values ER% and EM at full, since both are very valuable if you need them (sometimes better than ATK/CR/CDMG).
 
 Users can then just interpret the numbers in whatever context they're using that piece for. 
 
